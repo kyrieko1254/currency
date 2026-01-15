@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>환율 계산기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>USD → KRW 환율 계산기</h1>
+    <p class="rate-info" id="rateInfo">환율 정보를 가져오는 중...</p>
+
+    <div class="converter">
+      <div class="input-group">
+        <label for="usdInput">USD</label>
+        <input type="number" id="usdInput" placeholder="달러 금액 입력" min="0" step="0.01">
+      </div>
+
+      <button class="convert-btn" id="convertBtn" title="변환하기">→</button>
+
+      <div class="input-group">
+        <label for="krwOutput">KRW</label>
+        <input type="text" id="krwOutput" placeholder="원화 금액" readonly>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
